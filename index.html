@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sparkleforce</title>
+    
+    <base href="http://localhost/sparkleforce/" target="_blank" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="http://ca.statewater.org">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="libraries/bootstrap/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="libraries/bootstrap/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="libraries/bootstrap/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="libraries/bootstrap/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    
+    <link href="libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="libraries/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="libraries/FontAwesome/css/font-awesome.css" rel="stylesheet">
+    <link href='/css/mapbox.css' rel='stylesheet'>
+    <link href='/css/jquery.qtip.min.css' rel='stylesheet' type='text/css'> 
+    
+
+    <style type="text/css">
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 60px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+    </style>
+
+
+    <link href="css/style.css" rel="stylesheet">
+    
+    <script type="text/javascript" src="javascripts/libraries/jquery.js"></script>
+    <script type="text/javascript" src="javascripts/libraries/jquery.qtip.min.js"></script>
+    <script src='javascripts/libraries/mapbox.js'></script>    
+  </head>
+  <body>    
+
+
+
+    <div class="container-narrow">
+    <h1>Sparkleforce</h1>
+    
+    <p>We create tools to help our fellow citizens understand and improve our world.</p>
+    
+    <h3>Projects</h3>
+      <ul>
+        <li><a href="http://nerdsfornature.org">Nerds for Nature</a> (we are some of the founding members)</li>
+        <li><a href="http://ca.statewater.org">The New California Water Atlas</a></li>
+        <li><a href="http://ca.statewater.org/water-rights">California Water Rights Atlas</a></li>
+      </ul>
+      
+      
+    <h3>People</h3>
+      <h4>Chach Sikes, Instigator</h4>
+      <p><a href="http://codeforamerica.org">Code for America</a> Alum (2011), co-founder of the Iconathon and Lemonopoly. Chach brings her creative talents and 15 years of experience as a programmer, experience designer and community organizer. She has extensive experience creating inquiry-based science exhibits for museums. @chachasikes <a href="http://chachaville.com">http://chachaville.com</a></p>
+      <h4>Laci Videmsky, Research</h4>
+      <p>A designer and product developer, Laci has worked with NGOs and nonprofits to promote environmentally resilient, economically vital, and socially aware places and things. As a research assistant and GIS cartographer at Harvard University, he studied water and development issues in the Netherlands and the West Bank. He currently is a Project Director with the Resource Renewal Institute and Co-founder of Fog.  @videmsky <a href="http://lacividemsky.tumblr.com/work">http://lacividemsky.tumblr.com/work</a></p>
+      <hr />
+   
+        <h3>About The New California Water Atlas</h3>
+        <p>April 12, 2013. We are launching the Water Rights Atlas as the first in a series of visualizations to help us understand water in California. This initiative will require the cooperation, collaboration and collective knowledge to create more atlas interactives. <a href="https://www.newschallenge.org/open/open-government/submission/the-new-california-water-atlas/">Read more about the vision.</a></p>
+        <p>If you have questions, requests, data or would like to get involved, contact us at info (at) sparkleforce.com. More information about how you can participate will be available in the coming months.</p>
+
+
+        <h4>What is a Sparkleforce?</h4>
+        <p>We are a new generation of people-focused technologists who aspire to improve our relationship to our collective governance. <a href="http://codeforamerica.org/2011/03/16/government-sparkleforce/">Read more </a></p>
+
+        <p>&copy; <a href="http://sparkleforce.com">Sparkleforce</a>   2013</p>
+
+    </div> <!-- /container -->
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var title = $("li.menu-title");
+        $(title).on("click", function(e){
+          e.preventDefault();
+          var submenu = $(this).next();
+          
+          $(submenu).toggleClass("show");
+        });
+
+      }); 
+    </script>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-38509245-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+  
+  </body>
+</html>
